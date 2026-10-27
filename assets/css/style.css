@@ -17,6 +17,8 @@ Color scheme
     box-sizing: border-box;
 } */
 
+/* General styles */
+
 body {
     background-color: #1e093c;
     color: #cc9cdf;
@@ -24,8 +26,90 @@ body {
     font-size: 16px;
 }
 
+a:hover {
+    cursor: url('../img/my-little-pony-spike-pointer.png'), pointer;
+}
+
+/* Layout container styles */
+
+header, main, footer {
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #4b3072;
+    width: 1024px;
+}
+
+header {
+    padding-bottom: 0;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: none;
+}
+
+main {
+    border-top: none;
+    border-bottom: none;
+    color: #ac6fc4;
+}
+
+main, footer {
+    background-color: #243870;
+}
+
+main { background-color: #deccde;}
+
+footer {
+    border-radius: 0 0 0.25rem 0.25rem;
+    border-top: none;
+}
+
+/* Navigation styles */
+
+nav {
+    background-color: #ea428b;
+    margin: 0 -1rem;
+    padding: 1rem;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline;
+    list-style-type: none;
+}
+
+nav > ul > li.active > strong {
+    background-color: #243870;
+}
+
+nav > ul > li > a,
+nav > ul > li > strong {
+    padding: 1rem;
+}
+
+nav > ul > li > a,
+nav > ul > li > a:visited {
+    color: #243870;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    background-color: #f068a4;
+}
+
+/* Content styles */
+
 h1 {
     font-family: 'Celestia', serif;
     margin: 0 0 1.5rem 0;
     padding: 0;
+}
+
+/* Footer styles */
+
+footer p {
+    font-style: italic;
 }
