@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Celestia';
+    src: url('fonts/celestia/celestiamedium.ttf');
+}
+
+/* 
+Color scheme
+#cc9cdf 	(204,156,223)
+#243870 	(36,56,112)
+#652d87 	(101,45,135)
+#ea428b 	(234,66,139)
+#1e093c     (30,9,60) 
+*/
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #1e093c;
+    color: #cc9cdf;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Celestia', serif;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+}
