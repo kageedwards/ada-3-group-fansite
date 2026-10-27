@@ -35,13 +35,13 @@ a:hover {
 
 /* Layout container styles */
 
-header, main, footer {
+#main-header, main, footer {
     margin: 0 auto;
     padding: 1rem;
     width: 1024px;
 }
 
-header {
+#main-header {
     padding-bottom: 0;
     border-radius: 0.25rem 0.25rem 0 0;
     border-bottom: none;
@@ -63,6 +63,28 @@ main { background-color: #deccde;}
 footer {
     border-radius: 0 0 0.25rem 0.25rem;
     border-top: none;
+}
+
+/* Header / logo styles */
+
+#main-header h1 {
+    font-size: 5rem;
+    color: #ea428b;
+    padding: 2rem 0;
+    height: calc(128px - 2rem);
+    text-shadow: 2px 2px 5px #141414;
+    
+}
+
+#main-header small {
+    display:block;
+    font-size: 2rem;
+    padding: 0 2.5rem;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+#logo {
+    float:right;
 }
 
 /* Navigation styles */
@@ -119,9 +141,19 @@ h1 {
     padding: 0;
 }
 
+h1 + h4 {
+    margin: -1rem 0 1.5rem;
+}
+
 /* Footer styles */
 
 footer p {
     font-style: italic;
     text-align: center;
+}
+
+#corner-peek {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
