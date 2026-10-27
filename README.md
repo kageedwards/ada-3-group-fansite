@@ -75,9 +75,9 @@ Both of these containers do not need to be on the same page. Try using one for o
 <details>
 <summary>If you need some inspiration, here are two common layouts you can replicate</summary>
 
-![Group Fansite Wireframe Example 1](./assets/group-fansite-wireframe1.png)  
+![Group Fansite Wireframe Example 1](./assets/img/group-fansite-wireframe1.png)  
 
-![Group Fansite Wireframe Example 2](./assets/group-fansite-wireframe2.png)  
+![Group Fansite Wireframe Example 2](./assets/img/group-fansite-wireframe2.png)  
 </details>
 </br>
 
