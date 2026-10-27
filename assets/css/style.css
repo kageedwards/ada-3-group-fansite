@@ -20,6 +20,9 @@ Color scheme
 /* General styles */
 
 body {
+    background-image: url("../img/gallery/galaxy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #1e093c;
     color: #cc9cdf;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -35,7 +38,6 @@ a:hover {
 header, main, footer {
     margin: 0 auto;
     padding: 1rem;
-    border: 1px solid #4b3072;
     width: 1024px;
 }
 
@@ -45,14 +47,15 @@ header {
     border-bottom: none;
 }
 
+main, footer {
+    background-color: #243870;
+    border: 1px solid #4b3072;
+}
+
 main {
     border-top: none;
     border-bottom: none;
     color: #ac6fc4;
-}
-
-main, footer {
-    background-color: #243870;
 }
 
 main { background-color: #deccde;}
@@ -68,6 +71,8 @@ nav {
     background-color: #ea428b;
     margin: 0 -1rem;
     padding: 1rem;
+    border: 1px solid #4b3072;
+    border-bottom: none;
 }
 
 nav > ul {
@@ -101,6 +106,12 @@ nav > ul > li > a:focus {
 }
 
 /* Content styles */
+
+article > header {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
 
 h1 {
     font-family: 'Celestia', serif;
