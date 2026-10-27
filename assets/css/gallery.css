@@ -1,0 +1,31 @@
+/* 
+Color scheme
+#cc9cdf 	(204,156,223)
+#243870 	(36,56,112)
+#652d87 	(101,45,135)
+#ea428b 	(234,66,139)
+#1e093c     (30,9,60) 
+*/
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+
+}
+
+.gallery-grid img {
+    width: auto;
+    height: 200px;
+}
+
+.gallery-grid figcaption {
+    width: auto;
+}
+
+body {
+    background-image: url("../img/gallery/galaxy.jpg");
+    background-size: center;
+    background-repeat: no-repeat;
+}
