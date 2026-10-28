@@ -81,13 +81,10 @@ Color scheme
     box-shadow: none;
 }
 
-.products{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-
+/*Override background in style.css per instructions*/
+main {
+    background-color: #f3e8ff;
 }
-
 
 .btn,
 .product-card button {
@@ -111,6 +108,10 @@ Color scheme
 }
 
 .product-card {
+    display: flex;
+    flex-direction: column;   /* stack items top to bottom */
+    align-items: center;      /* center them horizontally */
+    gap: 8px;                 /* even spacing between image, title, price, button */
     border: 2px solid #e5e5e5;
     border-radius: 16px;
     padding: 16px;
@@ -127,4 +128,14 @@ Color scheme
 .price {
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+
+.product-card h3,
+.product-card .price {
+    margin: 0;                /* let gap control the spacing instead */
+}
+
+.product-card button {
+    margin-top: auto;         /* pushes the button to the bottom of the card */
 }
