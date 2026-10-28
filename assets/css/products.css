@@ -1,8 +1,11 @@
+/*IMPORTS*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: 'Celestia';
     src: url('../fonts/celestia/celestiamedium.ttf');
 }
+
+
 /*
 Color scheme
 #cc9cdf 	(204,156,223)
@@ -11,6 +14,7 @@ Color scheme
 #ea428b 	(234,66,139)
 #1e093c     (30,9,60)
 */
+
 
 /*BANNER*/
 .banner {
@@ -27,8 +31,8 @@ Color scheme
     object-fit: cover;           /* fills the space without stretching */
 }
 
-/* dark fade on the left so the white text is readable */
-.banner::after {
+
+.banner::after {                /* dark fade on the left so the white text is readable */
     content: "";
     position: absolute;
     inset: 0;
@@ -58,48 +62,14 @@ Color scheme
     margin: 0 0 1.5rem;
 }
 
-.banner .btn {
-    display: inline-block;
-    padding: 14px 32px;
-    border-radius: 12px;
-    background: #ea428b;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    box-shadow: 0 4px 0 #b8326d;
-    transition: transform 0.1s, background 0.2s;
-}
-
-.banner .btn:hover {
-    background: #f068a4;
-}
-
-.banner .btn:active {
-    transform: translateY(4px);
-    box-shadow: none;
-}
 
 /*Override background in style.css per instructions*/
 main {
     background-color: #f3e8ff;
 }
 
-.btn,
-.product-card button {
-    display: inline-block;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 12px;
-    background: #8b5cf6;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
 
-
+/*PRODUCTS*/
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -125,6 +95,8 @@ main {
     border-radius: 12px;
 }
 
+
+/*PRICE*/
 .price {
     font-weight: bold;
     font-size: 1.2rem;
@@ -136,6 +108,44 @@ main {
     margin: 0;                /* let gap control the spacing instead */
 }
 
+
+/*BUTTONS*/
+.btn,
+.product-card button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #8b5cf6;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .product-card button {
     margin-top: auto;         /* pushes the button to the bottom of the card */
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 12px;
+    background: #ea428b;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 4px 0 #b8326d;
+    transition: transform 0.1s, background 0.2s;
+}
+
+.banner .btn:hover {
+    background: #f068a4;
+}
+
+.banner .btn:active {
+    transform: translateY(4px);
+    box-shadow: none;
 }
