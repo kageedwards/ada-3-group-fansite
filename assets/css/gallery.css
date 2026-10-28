@@ -1,8 +1,8 @@
 /* gallery.css */
 article > header > h1 {
     text-align: center;
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 2rem;
+    color: #243870;
 }
 
 .gallery-grid {
@@ -22,6 +22,7 @@ article > header > h1 {
     background-color: white;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 .gallery-grid figure {
