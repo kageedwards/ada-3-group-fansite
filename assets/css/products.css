@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Celestia';
+    src: url('../fonts/celestia/celestiamedium.ttf');
+}
+/*
+Color scheme
+#cc9cdf 	(204,156,223)
+#243870 	(36,56,112)
+#652d87 	(101,45,135)
+#ea428b 	(234,66,139)
+#1e093c     (30,9,60)
+*/
+
+/*BANNER*/
+.banner {
+    position: relative;          /* lets the text be positioned inside it */
+    border-radius: 16px;
+    overflow: hidden;            /* clips the image to the rounded corners */
+    margin-bottom: 40px;
+}
+
+.banner img {
+    display: block;              /* removes the small gap under images */
+    width: 100%;
+    height: 420px;
+    object-fit: cover;           /* fills the space without stretching */
+}
+
+/* dark fade on the left so the white text is readable */
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(30, 9, 60, 0.85), rgba(30, 9, 60, 0) 60%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 48px;
+    transform: translateY(-50%); /* centers it vertically */
+    max-width: 40%;
+    z-index: 1;                  /* sits above the dark fade */
+    color: white;
+}
+
+.banner-text h2 {
+    font-family: 'Celestia', serif;
+    font-size: 3rem;
+    margin: 0 0 0.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #141414;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem;
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 12px;
+    background: #ea428b;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 4px 0 #b8326d;
+    transition: transform 0.1s, background 0.2s;
+}
+
+.banner .btn:hover {
+    background: #f068a4;
+}
+
+.banner .btn:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.products{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+
+.btn,
+.product-card button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #8b5cf6;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    border: 2px solid #e5e5e5;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
