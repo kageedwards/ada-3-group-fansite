@@ -1,26 +1,38 @@
 /* gallery.css */
+article > header > h1 {
+    text-align: center;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+}
 
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    padding: 20px;
+    gap: 20px;
+    padding: 10px;
 }
 
 .gallery-grid img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: contain;
-
-    transition: transform 0.3s ease-in-out;
+    display: block;
 }
 
-.gallery-grid img:hover {
-    transform: scale(1.15);
+.gallery-grid figure {
+    overflow: hidden;
 }
 
 .gallery-grid figcaption {
-    width: auto;
     font-size: .85rem;
     text-align: center;
+    padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-grid figure:hover figcaption {
+    opacity: 1;
+    visibility: visible;
 }
