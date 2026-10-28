@@ -6,10 +6,12 @@ article > header > h1 {
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    overflow-x: auto;
     gap: 20px;
     padding: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .gallery-grid img {
@@ -17,10 +19,14 @@ article > header > h1 {
     height: 250px;
     object-fit: contain;
     display: block;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .gallery-grid figure {
-    overflow: hidden;
+    flex: 0 0 300px;
+    scroll-snap-align: start;
 }
 
 .gallery-grid figcaption {
