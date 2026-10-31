@@ -72,7 +72,7 @@ main {
 /*PRODUCTS*/
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 40px;
 }
@@ -82,10 +82,11 @@ main {
     flex-direction: column;   /* stack items top to bottom */
     align-items: center;      /* center them horizontally */
     gap: 8px;                 /* even spacing between image, title, price, button */
-    border: 2px solid #e5e5e5;
+    /*border: 1px solid #652d87;*/
     border-radius: 16px;
     padding: 16px;
     text-align: center;
+    /*border-left: 6px solid #652d87;*/
 }
 
 .product-card img {
@@ -93,6 +94,61 @@ main {
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 12px;
+}
+
+/*IMAGE HOVER*/
+.img-wrap{
+    width:100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.img-wrap img{
+    display: block;
+    transition: transform 0.3s;
+}
+
+.product-card:hover .img-wrap img,
+.product-card:focus-within .img-wrap img{
+    transform: scale(1.08);
+}
+
+
+/*FEATURED PRODUCT*/
+.featured-product {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    text-align: left;
+}
+
+.featured-product img {
+    aspect-ratio: 4 / 3;
+}
+
+.featured-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.featured-label {
+    margin: 0;
+    color: #ea428b;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.featured-product .img-wrap{
+    width: 60%;
+    flex-shrink: 0;
+}
+
+.store-featured h2 {
+    color: #652d87
 }
 
 
@@ -106,6 +162,7 @@ main {
 .product-card h3,
 .product-card .price {
     margin: 0;                /* let gap control the spacing instead */
+    color: #652d87;
 }
 
 
@@ -116,7 +173,7 @@ main {
     padding: 12px 24px;
     border: none;
     border-radius: 12px;
-    background: #8b5cf6;
+    background: #652d87;
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -125,6 +182,11 @@ main {
 
 .product-card button {
     margin-top: auto;         /* pushes the button to the bottom of the card */
+}
+
+.product-card button:hover{
+    background: #f068a4;
+    cursor: url('../img/my-little-pony-spike-pointer.png'), pointer;
 }
 
 .banner .btn {
@@ -141,8 +203,10 @@ main {
     transition: transform 0.1s, background 0.2s;
 }
 
-.banner .btn:hover {
+.banner .btn:hover,
+.banner .btn:focus {
     background: #f068a4;
+    transform: translateY(-4px);
 }
 
 .banner .btn:active {
