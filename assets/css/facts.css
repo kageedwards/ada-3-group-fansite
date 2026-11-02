@@ -10,11 +10,6 @@ main {
     color: #1e093c;
 }
 
-footer p {
-    font-style: normal;
-    color: #f6f0fa;
-}
-
 article > header h2 {
     font-family: 'Celestia', serif;
     color: #652d87;
@@ -62,10 +57,4 @@ article > header h2 {
     border-left-color: #ea428b;
     box-shadow: 0 6px 16px rgba(101, 45, 135, 0.25);
     outline: none;
-}
-
-
-footer p {
-    font-style: normal;
-    color: #f6f0fa;
 }
