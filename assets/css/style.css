@@ -134,44 +134,6 @@ nav > ul > li > a:focus {
     background-color: #f068a4;
 }
 
-/* nav {
-    background-color: #ea428b;
-    margin: 0 -1rem;
-    padding: 1rem;
-    border: 1px solid #4b3072;
-    border-bottom: none;
-}
-
-nav > ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav > ul > li {
-    display: inline;
-    list-style-type: none;
-}
-
-nav > ul > li.active > strong {
-    background-color: #243870;
-}
-
-nav > ul > li > a,
-nav > ul > li > strong {
-    padding: 1rem;
-}
-
-nav > ul > li > a,
-nav > ul > li > a:visited {
-    color: #243870;
-    text-decoration: none;
-}
-
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-    background-color: #f068a4;
-} */
-
 /* Content styles */
 
 article > header {
