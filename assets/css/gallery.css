@@ -43,3 +43,20 @@ article > header > h1 {
     opacity: 1;
     visibility: visible;
 }
+
+
+@media screen and (max-width: 768px) {
+    .gallery-grid {
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .gallery-grid figure {
+        flex: 1;
+    }
+    
+    .gallery-grid figcaption {
+        opacity: 1;
+        visibility: visible;
+    }
+}
