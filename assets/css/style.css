@@ -148,15 +148,6 @@ h1 {
     padding: 0;
 }
 
-h1 + h4 {
-    margin: -1rem 0 1.5rem;
-}
-
-aside.float-left {
-    float:left;
-    margin: 1rem;
-}
-
 /* Footer styles */
 
 footer p {
