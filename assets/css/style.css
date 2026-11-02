@@ -38,7 +38,8 @@ a:hover {
 #main-header, main, footer {
     margin: 0 auto;
     padding: 1rem;
-    width: 1024px;
+    width: auto;
+    max-width: 1056px;
 }
 
 #main-header {
@@ -86,11 +87,54 @@ footer {
 #logo {
     float:right;
     image-rendering: pixelated;
+    max-width: 30%;
 }
 
 /* Navigation styles */
 
 nav {
+    background-color: #ea428b;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    border: 1px solid #4b3072;
+    border-bottom: none;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    list-style-type: none;
+}
+
+nav > ul > li.active > strong {
+    background-color: #243870;
+}
+
+nav > ul > li > a,
+nav > ul > li > strong {
+    display: inline-block;
+    padding: 1rem;
+}
+
+nav > ul > li > a,
+nav > ul > li > a:visited {
+    color: #243870;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    background-color: #f068a4;
+}
+
+/* nav {
     background-color: #ea428b;
     margin: 0 -1rem;
     padding: 1rem;
@@ -126,7 +170,7 @@ nav > ul > li > a:visited {
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
     background-color: #f068a4;
-}
+} */
 
 /* Content styles */
 
@@ -162,4 +206,41 @@ footer p {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    #main-header h1 {
+        font-size: 2.5rem;
+        padding: 0;
+        height: auto;
+    }
+    #main-header small {
+        font-size: 1rem;
+    }
+
+    #logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #corner-peek {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 0;
+    }
+
+    nav > ul > li {
+        flex-grow: 1;
+    }
+
+    nav > ul > li > a,
+    nav > ul > li > strong {
+        display: block;
+        text-align: center;
+    }
 }
